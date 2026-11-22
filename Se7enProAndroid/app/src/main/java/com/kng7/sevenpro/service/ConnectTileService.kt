@@ -41,7 +41,9 @@ class ConnectTileService : TileService() {
         } else {
             // VPN permission must already be granted; otherwise open the app
             if (VpnService.prepare(this) == null && SettingsStore.selectedProfileId.isNotBlank()) {
-                startService(SevenVpnService.intent(this, true))
+                androidx.core.content.ContextCompat.startForegroundService(
+                    this, SevenVpnService.intent(this, true)
+                )
             } else {
                 startActivityAndCollapseCompat()
             }
