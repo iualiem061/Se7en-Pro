@@ -1,0 +1,54 @@
+name: Android Build
+
+on:
+  push:
+    branches: [android]
+    paths: ['Se7enProAndroid/**']
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Se7enProAndroid
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Fetch sing-box engine binaries
+        run: bash scripts/fetch-engine.sh
+
+      - name: Build APK (release variant)
+        run: |
+          chmod +x gradlew
+          ./gradlew :app:assembleRelease --no-daemon
+
+      - name: Rename APK artifact
+        run: |
+          mkdir -p ../out
+          cp app/build/outputs/apk/release/*.apk ../out/Se7enPro-Android-$(git describe --tags --always).apk
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Se7enPro-Android-APK
+          path: out/*.apk
+          retention-days: 30
+
+      - name: Publish to GitHub Releases (on tag push)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: out/*.apk
+          generate_release_notes: true

@@ -1,6 +1,18 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+}
+
+// Optional release signing: place keystore/se7en-release.keystore next to app module
+// plus keystore/keystore.properties (storePassword=..., keyAlias=..., keyPassword=...).
+// If missing, release builds fall back to debug signing (safe for CI).
+val keystoreDir = file("keystore")
+val keystoreFile = File(keystoreDir, "se7en-release.keystore")
+val keystorePropsFile = File(keystoreDir, "keystore.properties")
+val keystoreProps = Properties().apply {
+    if (keystorePropsFile.exists()) keystorePropsFile.inputStream().use { load(it) }
 }
 
 android {
@@ -16,10 +28,26 @@ android {
         resourceConfigurations += listOf("en", "fa", "ru")
     }
 
+    signingConfigs {
+        if (keystoreFile.exists() && keystorePropsFile.exists()) {
+            create("release") {
+                storeFile = keystoreFile
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = if (keystoreFile.exists() && keystorePropsFile.exists()) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
         }
     }
 

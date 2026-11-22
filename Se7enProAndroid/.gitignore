@@ -8,6 +8,11 @@ local.properties
 # sing-box engine binaries are fetched by scripts/fetch-engine.sh (too large for git)
 app/src/main/jniLibs/*
 
+# Release signing secrets — NEVER commit these
+app/keystore/keystore.properties
+keystore/*.keystore
+keystore/*.jks
+
 # IDE
 .idea/
 *.iml

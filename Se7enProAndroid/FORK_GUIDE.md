@@ -61,31 +61,45 @@ bash scripts/fetch-engine.sh
 
 ## 5) امضا برای انتشار (Release)
 
+پروژه از قبل کانفیگ امضای داخلی دارد: اگر فایل `Se7enProAndroid/app/keystore/se7en-release.keystore` و `keystore.properties` موجود باشند، بیلد release **خودکار با آن امضا می‌شود**؛ در غیر این صورت با کلید debug امضا می‌شود (برای CI امن است).
+
+### ساخت keystore جدید برای خودت
 ```bash
-keytool -genkey -v -keystore se7en.keystore -alias se7en -keyalg RSA -keysize 2048 -validity 10000
+mkdir -p Se7enProAndroid/app/keystore
+keytool -genkeypair -v \
+  -keystore Se7enProAndroid/app/keystore/se7en-release.keystore \
+  -alias se7en -keyalg RSA -keysize 2048 -validity 10950
+```
+
+### فایل پسوردها (هرگز commit نشود — در .gitignore هست)
+`Se7enProAndroid/app/keystore/keystore.properties`:
+```properties
+storePassword=<رمز keystore>
+keyAlias=se7en
+keyPassword=<رمز کلید>
+```
+
+سپس:
+```bash
 ./gradlew assembleRelease
-# سپس با apksigner امضا کن، یا تنظیمات signingConfig را به app/build.gradle.kts اضافه کن
+# خروجی: app/build/outputs/apk/release/app-release.apk  (امضاشده با کلید خودت)
 ```
 
-## 6) بیلد خودکار با GitHub Actions (اختیاری)
+> ⚠️ فایل keystore را در جایی امن نگه دار — هر نسخه جدید باید با همان کلید امضا شود تا آپدیت روی نسخه‌های قبلی نصب شود. هرگز keystore را در ریپو یا Release آپلود نکن.
+> keystore فعلی نسخه v1.0.0 از سازنده اولیه تهیه شده؛ برای برند خودت حتماً یک keystore جدید بساز.
 
-فایل `.github/workflows/android.yml` در شاخه `android`:
+## 6) بیلد خودکار با GitHub Actions (فعال است ✅)
 
-```yaml
-name: Android CI
-on: { push: { branches: [android] } }
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with: { distribution: temurin, java-version: '17' }
-      - uses: android-actions/setup-android@v3
-      - run: cd Se7enProAndroid && bash scripts/fetch-engine.sh && ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v4
-        with: { name: se7en-pro-android, path: Se7enProAndroid/app/build/outputs/apk/debug/*.apk }
-```
+Workflow آماده: `.github/workflows/android-build.yml` — روی هر push به شاخه `android` (در مسیر `Se7enProAndroid/**`) به‌صورت خودکار:
+1. JDK 17 را نصب می‌کند
+2. با `scripts/fetch-engine.sh` باینری موتور را دانلود می‌کند
+3. `assembleRelease` می‌زند (بدون keystore → امضای debug)
+4. APK را به آرتیفکت‌های Actions آپلود می‌کند
+5. اگر تگ `v*` پوش شود، APK مستقیماً در GitHub Releases منتشر می‌شود
+
+استفاده دستی: تب **Actions** در ریپو → Android Build → Run workflow.
+
+> برای انتشار خودکار با کلید خودت در CI: محتوای keystore را به‌صورت Base64 در Secret `SE7EN_KEYSTORE` و پسوردها در `SE7EN_KEYSTORE_PASS` بگذار و یک step decode قبل از بیلد اضافه کن.
 
 ## 7) مجوز
 
