@@ -51,6 +51,25 @@ android {
         }
     }
 
+    // Per-ABI APKs + universal, all packaged & signed by AGP (keeps resources.arsc
+    // uncompressed and aligned as required on Android 11+).
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            include("arm64-v8a", "armeabi-v7a", "x86_64")
+            isUniversalApk = true
+        }
+    }
+
+    // Compress native libs into the APK (extracted on install) -> much smaller downloads,
+    // while AGP still keeps resources.arsc uncompressed + aligned (Android 11+ requirement).
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
