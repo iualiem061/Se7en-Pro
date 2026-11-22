@@ -1,4 +1,4 @@
-# Se7en Pro for Android
+# Pro Vpn (Android)
 
 <div dir="rtl">
 
@@ -8,7 +8,7 @@
 
 </div>
 
-Se7en Pro for Android — the Android companion of the [Se7en Pro](https://github.com/KNG7-P/Se7en-Pro) Windows anti-censorship suite.
+Pro Vpn — the Android client (rebranded fork) of the [Se7en Pro](https://github.com/KNG7-P/Se7en-Pro) Windows anti-censorship suite.
 Powered by a sing-box engine process + hev-socks5-tunnel bridge inside Android's VpnService.
 
 ## Features

@@ -17,3 +17,7 @@ keystore/*.jks
 .idea/
 *.iml
 .DS_Store
+
+# Release signing secrets — NEVER commit these (whole dir)
+Se7enProAndroid/app/keystore/
+app/keystore/

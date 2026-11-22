@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Se7en Pro</string>
+    <string name="app_name">Pro Vpn</string>
 
     <string name="nav_home">Профили</string>
     <string name="nav_subs">Подписки</string>
@@ -63,10 +63,10 @@
     <string name="apps_search">Поиск приложений…</string>
     <string name="killswitch_title">Kill Switch</string>
     <string name="killswitch_hint">Включите «Постоянный VPN» + «Блокировать соединения без VPN» в настройках Android.</string>
-    <string name="killswitch_message">В Android есть встроенный Kill Switch:\n\n1. Настройки → Сеть → VPN (шестерёнка)\n2. Включите «Постоянный VPN» для Se7en Pro\n3. Включите «Блокировать соединения без VPN»\n\nПри обрыве туннеля весь трафик будет заблокирован.</string>
+    <string name="killswitch_message">В Android есть встроенный Kill Switch:\n\n1. Настройки → Сеть → VPN (шестерёнка)\n2. Включите «Постоянный VPN» для Pro Vpn\n3. Включите «Блокировать соединения без VPN»\n\nПри обрыве туннеля весь трафик будет заблокирован.</string>
     <string name="killswitch_open_settings">Открыть настройки VPN</string>
     <string name="section_about">О программе</string>
-    <string name="about_text">Se7en Pro для Android %1$s\nМультипротокольный клиент против цензуры (движок sing-box).\n\nДвижок: sing-box · Туннель: hev-socks5-tunnel\nЛицензия MIT, на основе Se7en Pro для Windows.</string>
+    <string name="about_text">Pro Vpn для Android %1$s\nМультипротокольный клиент против цензуры (движок sing-box).\n\nДвижок: sing-box · Туннель: hev-socks5-tunnel\nЛицензия MIT, на основе Se7en Pro для Windows.</string>
     <string name="about_source">Исходный код</string>
     <string name="engine_info">Движок: %1$s</string>
     <string name="engine_not_run">ещё не запускался</string>

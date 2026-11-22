@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Se7en Pro</string>
+    <string name="app_name">Pro Vpn</string>
 
     <string name="nav_home">پروفایل‌ها</string>
     <string name="nav_subs">سابسکریپشن‌ها</string>
@@ -63,10 +63,10 @@
     <string name="apps_search">جستجوی اپ…</string>
     <string name="killswitch_title">Kill Switch</string>
     <string name="killswitch_hint">برای قطع‌نشده‌ماندن، در اندروید گزینه «همیشه روشن» + «مسدودسازی اتصال بدون VPN» را فعال کنید.</string>
-    <string name="killswitch_message">اندروید یک Kill Switch داخلی دارد:\n\n۱. تنظیمات ← شبکه ← VPN (آیکون چرخ‌دنده)\n۲. «همیشه روشن» را برای Se7en Pro فعال کنید\n۳. «مسدودسازی اتصال بدون VPN» را فعال کنید\n\nبا این کار اگر تونل قطع شود، همه ترافیک مسدود می‌شود.</string>
+    <string name="killswitch_message">اندروید یک Kill Switch داخلی دارد:\n\n۱. تنظیمات ← شبکه ← VPN (آیکون چرخ‌دنده)\n۲. «همیشه روشن» را برای Pro Vpn فعال کنید\n۳. «مسدودسازی اتصال بدون VPN» را فعال کنید\n\nبا این کار اگر تونل قطع شود، همه ترافیک مسدود می‌شود.</string>
     <string name="killswitch_open_settings">بازکردن تنظیمات VPN</string>
     <string name="section_about">درباره</string>
-    <string name="about_text">Se7en Pro برای اندروید %1$s\nکلاینت چندپروتکلی آنتی‌سنسور (موتور sing-box).\n\nموتور: sing-box · پل تونل: hev-socks5-tunnel\nمجوز MIT، بر پایه پروژه ویندوزی Se7en Pro.</string>
+    <string name="about_text">Pro Vpn برای اندروید %1$s\nکلاینت چندپروتکلی آنتی‌سنسور (موتور sing-box).\n\nموتور: sing-box · پل تونل: hev-socks5-tunnel\nمجوز MIT، بر پایه پروژه ویندوزی Se7en Pro.</string>
     <string name="about_source">کد منبع</string>
     <string name="engine_info">موتور: %1$s</string>
     <string name="engine_not_run">هنوز اجرا نشده</string>

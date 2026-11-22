@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:localeConfig="@xml/locales_config"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Se7enPro">
+        android:theme="@style/Theme.ProVpn">
 
         <activity
             android:name=".ui.MainActivity"

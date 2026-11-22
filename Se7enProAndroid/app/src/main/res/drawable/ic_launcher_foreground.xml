@@ -12,12 +12,25 @@
     <path
         android:fillColor="#1565C0"
         android:pathData="M54,22 L80,31.5 L80,52 C80,68 68.5,79.5 54,85 C39.5,79.5 28,68 28,52 L28,31.5 Z" />
-    <!-- Big 7 -->
+    <!-- Padlock: shackle -->
     <path
-        android:pathData="M42,38 L66,38 L52,70"
+        android:pathData="M47,52 L47,45 C47,40.6 50.1,37.5 54,37.5 C57.9,37.5 61,40.6 61,45 L61,52"
         android:strokeColor="#FFFFFF"
-        android:strokeWidth="7"
+        android:strokeWidth="4.5"
         android:strokeLineCap="round"
-        android:strokeLineJoin="round"
+        android:fillColor="#00000000" />
+    <!-- Padlock: body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,55 C44,53.3 45.3,52 47,52 L61,52 C62.7,52 64,53.3 64,55 L64,65 C64,66.7 62.7,68 61,68 L47,68 C45.3,68 44,66.7 44,65 Z" />
+    <!-- Padlock: keyhole -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M54,55.5 C55.7,55.5 57,56.8 57,58.5 C57,60.2 55.7,61.5 54,61.5 C52.3,61.5 51,60.2 51,58.5 C51,56.8 52.3,55.5 54,55.5 Z" />
+    <path
+        android:pathData="M54,61.5 L54,64.5"
+        android:strokeColor="#1565C0"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
         android:fillColor="#00000000" />
 </vector>

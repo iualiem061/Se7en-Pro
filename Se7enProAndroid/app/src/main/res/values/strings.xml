@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Se7en Pro</string>
+    <string name="app_name">Pro Vpn</string>
 
     <!-- Navigation -->
     <string name="nav_home">Profiles</string>
@@ -69,10 +69,10 @@
     <string name="apps_search">Search apps…</string>
     <string name="killswitch_title">Kill switch</string>
     <string name="killswitch_hint">Use the Android "Always-on VPN" with "Block connections without VPN" for a system-level kill switch.</string>
-    <string name="killswitch_message">Android has a built-in kill switch:\n\n1. Open Settings → Network → VPN (cog icon)\n2. Enable Always-on VPN for Se7en Pro\n3. Enable "Block connections without VPN"\n\nThis blocks all traffic if the tunnel drops.</string>
+    <string name="killswitch_message">Android has a built-in kill switch:\n\n1. Open Settings → Network → VPN (cog icon)\n2. Enable Always-on VPN for Pro Vpn\n3. Enable "Block connections without VPN"\n\nThis blocks all traffic if the tunnel drops.</string>
     <string name="killswitch_open_settings">Open VPN settings</string>
     <string name="section_about">About</string>
-    <string name="about_text">Se7en Pro for Android %1$s\nMulti-protocol anti-censorship client (sing-box engine).\n\nEngine: sing-box · Tunnel bridge: hev-socks5-tunnel\nMIT licensed, based on the Se7en Pro Windows project.</string>
+    <string name="about_text">Pro Vpn for Android %1$s\nMulti-protocol anti-censorship client (sing-box engine).\n\nEngine: sing-box · Tunnel bridge: hev-socks5-tunnel\nMIT licensed, based on the Se7en Pro Windows project.</string>
     <string name="about_source">Source code</string>
     <string name="engine_info">Engine: %1$s</string>
     <string name="engine_not_run">not started yet</string>

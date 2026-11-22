@@ -1,7 +1,7 @@
 package com.kng7.sevenpro
 
 object Constants {
-    const val LOG_TAG = "Se7enPro"
+    const val LOG_TAG = "ProVpn"
 
     /** Local SOCKS5 server exposed by the sing-box engine process. */
     const val SOCKS_HOST = "127.0.0.1"

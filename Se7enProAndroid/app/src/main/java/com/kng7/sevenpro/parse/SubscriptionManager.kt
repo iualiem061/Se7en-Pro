@@ -16,7 +16,7 @@ object SubscriptionManager {
             conn.connectTimeout = 12_000
             conn.readTimeout = 20_000
             conn.instanceFollowRedirects = true
-            conn.setRequestProperty("User-Agent", "Se7enPro-Android/1.0")
+            conn.setRequestProperty("User-Agent", "ProVpn-Android/1.1")
             val code = conn.responseCode
             if (code !in 200..299) {
                 return@withContext Result.failure(IllegalStateException("HTTP $code"))
