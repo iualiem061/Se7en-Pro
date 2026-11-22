@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Se7en Pro</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Profiles</string>
+    <string name="nav_subs">Subscriptions</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Toolbar menu -->
+    <string name="menu_add">Add profile</string>
+    <string name="menu_about">About</string>
+    <string name="item_edit">Edit</string>
+    <string name="item_ping">Test ping</string>
+    <string name="item_share">Share</string>
+    <string name="item_delete">Delete</string>
+    <string name="item_refresh">Update now</string>
+
+    <!-- Home -->
+    <string name="home_empty">No profiles yet.\nUse + to add one or import a subscription.</string>
+    <string name="cd_connect">Connect / disconnect</string>
+    <string name="cd_selected">Selected</string>
+    <string name="reconnect_hint">Disconnect and reconnect to apply the new profile</string>
+    <string name="state_disconnected">Disconnected</string>
+    <string name="state_connecting">Connecting…</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_disconnecting">Disconnecting…</string>
+    <string name="state_error">Error</string>
+    <string name="stats_zero">↑ 0 B/s   ↓ 0 B/s   Σ 0 B</string>
+    <string name="stats_line">↑ %1$s   ↓ %2$s   Σ %3$s ↑ / %4$s ↓</string>
+    <string name="engine_running">Engine: %1$s</string>
+    <string name="ping_result">%1$d ms</string>
+    <string name="ping_failed">unreachable</string>
+
+    <!-- Import -->
+    <string name="import_title">Import links</string>
+    <string name="import_hint">Paste vmess:// / vless:// / trojan:// / ss:// / hysteria2:// / tuic:// / warp:// links (one per line) or a sing-box JSON</string>
+    <string name="import_action">Import</string>
+    <string name="imported_count">%1$d profile(s) imported</string>
+    <string name="import_failed">Nothing importable found</string>
+
+    <!-- Subscriptions -->
+    <string name="subs_empty">No subscriptions.\nTap + to add a subscription URL.</string>
+    <string name="sub_add">Add subscription</string>
+    <string name="sub_name_hint">Name (optional)</string>
+    <string name="sub_url_hint">Subscription URL</string>
+    <string name="save">Save</string>
+    <string name="sub_meta">%1$d profiles · updated: %2$s</string>
+    <string name="sub_never">never</string>
+    <string name="sub_updated">Fetched %1$d, added %2$d new</string>
+    <string name="sub_failed">Update failed: %1$s</string>
+
+    <!-- Settings -->
+    <string name="section_appearance">Appearance</string>
+    <string name="setting_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="setting_language">Language</string>
+    <string name="lang_system">System default</string>
+    <string name="section_tunnel">Tunnel</string>
+    <string name="setting_ipv6">Enable IPv6</string>
+    <string name="setting_icmp">Reply to ping inside tunnel (ICMP)</string>
+    <string name="setting_boot">Auto-connect on boot</string>
+    <string name="setting_port">Local SOCKS port</string>
+    <string name="section_apps">Apps</string>
+    <string name="setting_apps">Split tunneling (bypass apps)</string>
+    <string name="apps_title">Split tunneling</string>
+    <string name="apps_search">Search apps…</string>
+    <string name="killswitch_title">Kill switch</string>
+    <string name="killswitch_hint">Use the Android "Always-on VPN" with "Block connections without VPN" for a system-level kill switch.</string>
+    <string name="killswitch_message">Android has a built-in kill switch:\n\n1. Open Settings → Network → VPN (cog icon)\n2. Enable Always-on VPN for Se7en Pro\n3. Enable "Block connections without VPN"\n\nThis blocks all traffic if the tunnel drops.</string>
+    <string name="killswitch_open_settings">Open VPN settings</string>
+    <string name="section_about">About</string>
+    <string name="about_text">Se7en Pro for Android %1$s\nMulti-protocol anti-censorship client (sing-box engine).\n\nEngine: sing-box · Tunnel bridge: hev-socks5-tunnel\nMIT licensed, based on the Se7en Pro Windows project.</string>
+    <string name="about_source">Source code</string>
+    <string name="engine_info">Engine: %1$s</string>
+    <string name="engine_not_run">not started yet</string>
+
+    <!-- Editor -->
+    <string name="editor_title_new">New profile</string>
+    <string name="editor_title_edit">Edit profile</string>
+    <string name="field_type">Protocol</string>
+    <string name="field_name">Name</string>
+    <string name="field_server">Server address</string>
+    <string name="field_port">Port</string>
+    <string name="field_uuid">UUID</string>
+    <string name="field_aid">Alter ID</string>
+    <string name="field_password">Password / key</string>
+    <string name="field_method">Encryption method</string>
+    <string name="field_username">Username</string>
+    <string name="field_orbot_port">Orbot SOCKS port</string>
+    <string name="field_obfs">Obfuscation password (salamander)</string>
+    <string name="field_transport">Transport</string>
+    <string name="field_path">Path</string>
+    <string name="field_host">Host header</string>
+    <string name="field_service_name">gRPC service name</string>
+    <string name="field_http_host">HTTP host</string>
+    <string name="field_security">TLS</string>
+    <string name="field_sni">SNI / server name</string>
+    <string name="field_fingerprint">uTLS fingerprint</string>
+    <string name="field_alpn">ALPN (comma separated)</string>
+    <string name="field_insecure">Allow insecure TLS</string>
+    <string name="field_pbk">Reality public key</string>
+    <string name="field_sid">Reality short ID</string>
+    <string name="field_flow">Flow</string>
+    <string name="field_wg_private">WireGuard private key</string>
+    <string name="field_wg_peer">Peer public key (Cloudflare)</string>
+    <string name="field_wg_address">Interface address</string>
+    <string name="field_wg_reserved">Reserved bytes (base64 or 1,2,3)</string>
+    <string name="field_wg_mtu">MTU</string>
+    <string name="field_json">sing-box JSON (outbound or full config)</string>
+    <string name="field_chain">Chain through (multi-hop)</string>
+    <string name="chain_none">None</string>
+    <string name="err_required">Required</string>
+    <string name="err_invalid_json">Invalid sing-box JSON</string>
+
+    <!-- Errors -->
+    <string name="err_no_profile">Select a profile first</string>
+    <string name="err_config">Config generation failed</string>
+    <string name="err_engine_start">Could not start the sing-box engine</string>
+    <string name="err_engine_ready">Engine did not become ready in time.\nLast engine lines:</string>
+    <string name="err_vpn_establish">VPN interface error</string>
+    <string name="err_vpn_permission">VPN permission denied</string>
+    <string name="err_tunnel_bridge">Tunnel bridge failed to start</string>
+
+    <!-- Notifications / tile -->
+    <string name="logs_title">Logs</string>
+    <string name="logs_refresh">Refresh</string>
+    <string name="logs_share">Share</string>
+
+    <!-- Notifications / tile -->
+    <string name="channel_vpn">VPN tunnel</string>
+    <string name="notif_connecting">Connecting…</string>
+    <string name="notif_connected">Connected</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="tile_connected">Connected</string>
+    <string name="tile_connecting">Connecting…</string>
+    <string name="tile_error">Error</string>
+</resources>

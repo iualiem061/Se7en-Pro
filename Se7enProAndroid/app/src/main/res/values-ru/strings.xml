@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Se7en Pro</string>
+
+    <string name="nav_home">Профили</string>
+    <string name="nav_subs">Подписки</string>
+    <string name="nav_settings">Настройки</string>
+
+    <string name="menu_add">Добавить профиль</string>
+    <string name="menu_about">О программе</string>
+    <string name="item_edit">Изменить</string>
+    <string name="item_ping">Проверить пинг</string>
+    <string name="item_share">Поделиться</string>
+    <string name="item_delete">Удалить</string>
+    <string name="item_refresh">Обновить</string>
+
+    <string name="home_empty">Профилей пока нет.\nДобавьте через + или импортируйте подписку.</string>
+    <string name="cd_connect">Подключить / отключить</string>
+    <string name="cd_selected">Выбрано</string>
+    <string name="reconnect_hint">Переподключитесь, чтобы применить новый профиль</string>
+    <string name="state_disconnected">Отключено</string>
+    <string name="state_connecting">Подключение…</string>
+    <string name="state_connected">Подключено</string>
+    <string name="state_disconnecting">Отключение…</string>
+    <string name="state_error">Ошибка</string>
+    <string name="stats_zero">↑ 0 Б/с   ↓ 0 Б/с   Σ 0 Б</string>
+    <string name="stats_line">↑ %1$s   ↓ %2$s   Σ %3$s ↑ / %4$s ↓</string>
+    <string name="engine_running">Движок: %1$s</string>
+    <string name="ping_result">%1$d мс</string>
+    <string name="ping_failed">недоступен</string>
+
+    <string name="import_title">Импорт ссылок</string>
+    <string name="import_hint">Вставьте ссылки vmess:// / vless:// / trojan:// / ss:// / hysteria2:// / tuic:// / warp:// (по одной в строке) или JSON sing-box</string>
+    <string name="import_action">Импорт</string>
+    <string name="imported_count">Импортировано профилей: %1$d</string>
+    <string name="import_failed">Нечего импортировать</string>
+
+    <string name="subs_empty">Подписок нет.\nНажмите +, чтобы добавить ссылку подписки.</string>
+    <string name="sub_add">Добавить подписку</string>
+    <string name="sub_name_hint">Название (необязательно)</string>
+    <string name="sub_url_hint">URL подписки</string>
+    <string name="save">Сохранить</string>
+    <string name="sub_meta">Профилей: %1$d · обновлено: %2$s</string>
+    <string name="sub_never">никогда</string>
+    <string name="sub_updated">Получено %1$d, добавлено новых: %2$d</string>
+    <string name="sub_failed">Ошибка обновления: %1$s</string>
+
+    <string name="section_appearance">Внешний вид</string>
+    <string name="setting_theme">Тема</string>
+    <string name="theme_system">Как в системе</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="setting_language">Язык</string>
+    <string name="lang_system">Системный</string>
+    <string name="section_tunnel">Туннель</string>
+    <string name="setting_ipv6">Включить IPv6</string>
+    <string name="setting_icmp">Отвечать на ping в туннеле (ICMP)</string>
+    <string name="setting_boot">Подключаться при загрузке</string>
+    <string name="setting_port">Локальный порт SOCKS</string>
+    <string name="section_apps">Приложения</string>
+    <string name="setting_apps">Раздельное туннелирование (исключить приложения)</string>
+    <string name="apps_title">Выбор приложений</string>
+    <string name="apps_search">Поиск приложений…</string>
+    <string name="killswitch_title">Kill Switch</string>
+    <string name="killswitch_hint">Включите «Постоянный VPN» + «Блокировать соединения без VPN» в настройках Android.</string>
+    <string name="killswitch_message">В Android есть встроенный Kill Switch:\n\n1. Настройки → Сеть → VPN (шестерёнка)\n2. Включите «Постоянный VPN» для Se7en Pro\n3. Включите «Блокировать соединения без VPN»\n\nПри обрыве туннеля весь трафик будет заблокирован.</string>
+    <string name="killswitch_open_settings">Открыть настройки VPN</string>
+    <string name="section_about">О программе</string>
+    <string name="about_text">Se7en Pro для Android %1$s\nМультипротокольный клиент против цензуры (движок sing-box).\n\nДвижок: sing-box · Туннель: hev-socks5-tunnel\nЛицензия MIT, на основе Se7en Pro для Windows.</string>
+    <string name="about_source">Исходный код</string>
+    <string name="engine_info">Движок: %1$s</string>
+    <string name="engine_not_run">ещё не запускался</string>
+
+    <string name="editor_title_new">Новый профиль</string>
+    <string name="editor_title_edit">Изменить профиль</string>
+    <string name="field_type">Протокол</string>
+    <string name="field_name">Название</string>
+    <string name="field_server">Адрес сервера</string>
+    <string name="field_port">Порт</string>
+    <string name="field_uuid">UUID</string>
+    <string name="field_aid">Alter ID</string>
+    <string name="field_password">Пароль / ключ</string>
+    <string name="field_method">Метод шифрования</string>
+    <string name="field_username">Имя пользователя</string>
+    <string name="field_orbot_port">SOCKS-порт Orbot</string>
+    <string name="field_obfs">Пароль обфускации (salamander)</string>
+    <string name="field_transport">Транспорт</string>
+    <string name="field_path">Путь (Path)</string>
+    <string name="field_host">Заголовок Host</string>
+    <string name="field_service_name">Имя сервиса gRPC</string>
+    <string name="field_http_host">HTTP-хост</string>
+    <string name="field_security">TLS</string>
+    <string name="field_sni">SNI / имя сервера</string>
+    <string name="field_fingerprint">Отпечаток uTLS</string>
+    <string name="field_alpn">ALPN (через запятую)</string>
+    <string name="field_insecure">Разрешить ненадёжный TLS</string>
+    <string name="field_pbk">Публичный ключ Reality</string>
+    <string name="field_sid">Reality Short ID</string>
+    <string name="field_flow">Flow</string>
+    <string name="field_wg_private">Приватный ключ WireGuard</string>
+    <string name="field_wg_peer">Публичный ключ пира (Cloudflare)</string>
+    <string name="field_wg_address">Адрес интерфейса</string>
+    <string name="field_wg_reserved">Reserved-байты (base64 или 1,2,3)</string>
+    <string name="field_wg_mtu">MTU</string>
+    <string name="field_json">JSON sing-box (outbound или полный конфиг)</string>
+    <string name="field_chain">Цепочка через (multi-hop)</string>
+    <string name="chain_none">Без цепочки</string>
+    <string name="err_required">Обязательно</string>
+    <string name="err_invalid_json">Недопустимый JSON sing-box</string>
+
+    <string name="err_no_profile">Сначала выберите профиль</string>
+    <string name="err_config">Ошибка генерации конфигурации</string>
+    <string name="err_engine_start">Не удалось запустить движок sing-box</string>
+    <string name="err_engine_ready">Движок не стал готов вовремя.\nПоследние строки движка:</string>
+    <string name="err_vpn_establish">Ошибка интерфейса VPN</string>
+    <string name="err_vpn_permission">Разрешение VPN отклонено</string>
+    <string name="err_tunnel_bridge">Не удалось запустить туннельный мост</string>
+
+    <string name="logs_title">Логи</string>
+    <string name="logs_refresh">Обновить</string>
+    <string name="logs_share">Поделиться</string>
+
+    <!-- Notifications / tile -->
+    <string name="channel_vpn">VPN-туннель</string>
+    <string name="notif_connecting">Подключение…</string>
+    <string name="notif_connected">Подключено</string>
+    <string name="action_disconnect">Отключить</string>
+    <string name="tile_connected">Подключено</string>
+    <string name="tile_connecting">Подключение…</string>
+    <string name="tile_error">Ошибка</string>
+</resources>

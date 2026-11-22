@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Se7en Pro</string>
+
+    <string name="nav_home">پروفایل‌ها</string>
+    <string name="nav_subs">سابسکریپشن‌ها</string>
+    <string name="nav_settings">تنظیمات</string>
+
+    <string name="menu_add">افزودن پروفایل</string>
+    <string name="menu_about">درباره</string>
+    <string name="item_edit">ویرایش</string>
+    <string name="item_ping">تست پینگ</string>
+    <string name="item_share">اشتراک‌گذاری</string>
+    <string name="item_delete">حذف</string>
+    <string name="item_refresh">به‌روزرسانی</string>
+
+    <string name="home_empty">هیچ پروفایلی وجود ندارد.\nبا دکمه + یکی بسازید یا سابسکریپشن ایمپورت کنید.</string>
+    <string name="cd_connect">اتصال / قطع</string>
+    <string name="cd_selected">انتخاب‌شده</string>
+    <string name="reconnect_hint">برای اعمال پروفایل جدید، قطع و دوباره وصل شوید</string>
+    <string name="state_disconnected">قطع شده</string>
+    <string name="state_connecting">در حال اتصال…</string>
+    <string name="state_connected">متصل</string>
+    <string name="state_disconnecting">در حال قطع…</string>
+    <string name="state_error">خطا</string>
+    <string name="stats_zero">↑ 0 B/s   ↓ 0 B/s   Σ 0 B</string>
+    <string name="stats_line">↑ %1$s   ↓ %2$s   Σ %3$s ↑ / %4$s ↓</string>
+    <string name="engine_running">موتور: %1$s</string>
+    <string name="ping_result">%1$d ms</string>
+    <string name="ping_failed">بدون پاسخ</string>
+
+    <string name="import_title">ایمپورت لینک‌ها</string>
+    <string name="import_hint">لینک‌های vmess:// / vless:// / trojan:// / ss:// / hysteria2:// / tuic:// / warp:// را بچسبانید (هر خط یکی) یا JSON سینگ‌باکس</string>
+    <string name="import_action">ایمپورت</string>
+    <string name="imported_count">%1$d پروفایل ایمپورت شد</string>
+    <string name="import_failed">چیزی برای ایمپورت پیدا نشد</string>
+
+    <string name="subs_empty">سابسکریپشی ندارید.\nبا دکمه + یک آدرس سابسکریپشن اضافه کنید.</string>
+    <string name="sub_add">افزودن سابسکریپشن</string>
+    <string name="sub_name_hint">نام (اختیاری)</string>
+    <string name="sub_url_hint">آدرس سابسکریپشن</string>
+    <string name="save">ذخیره</string>
+    <string name="sub_meta">%1$d پروفایل · به‌روزرسانی: %2$s</string>
+    <string name="sub_never">هرگز</string>
+    <string name="sub_updated">دریافت %1$d مورد، %2$d مورد جدید</string>
+    <string name="sub_failed">به‌روزرسانی ناموفق: %1$s</string>
+
+    <string name="section_appearance">ظاهر</string>
+    <string name="setting_theme">تم</string>
+    <string name="theme_system">هماهنگ با سیستم</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تیره</string>
+    <string name="setting_language">زبان</string>
+    <string name="lang_system">پیش‌فرض سیستم</string>
+    <string name="section_tunnel">تونل</string>
+    <string name="setting_ipv6">فعال‌سازی IPv6</string>
+    <string name="setting_icmp">پاسخ به پینگ داخل تونل (ICMP)</string>
+    <string name="setting_boot">اتصال خودکار پس از بوت</string>
+    <string name="setting_port">پورت SOCKS محلی</string>
+    <string name="section_apps">اپلیکیشن‌ها</string>
+    <string name="setting_apps">Split Tunneling (استثنا کردن اپ‌ها)</string>
+    <string name="apps_title">انتخاب اپ‌ها</string>
+    <string name="apps_search">جستجوی اپ…</string>
+    <string name="killswitch_title">Kill Switch</string>
+    <string name="killswitch_hint">برای قطع‌نشده‌ماندن، در اندروید گزینه «همیشه روشن» + «مسدودسازی اتصال بدون VPN» را فعال کنید.</string>
+    <string name="killswitch_message">اندروید یک Kill Switch داخلی دارد:\n\n۱. تنظیمات ← شبکه ← VPN (آیکون چرخ‌دنده)\n۲. «همیشه روشن» را برای Se7en Pro فعال کنید\n۳. «مسدودسازی اتصال بدون VPN» را فعال کنید\n\nبا این کار اگر تونل قطع شود، همه ترافیک مسدود می‌شود.</string>
+    <string name="killswitch_open_settings">بازکردن تنظیمات VPN</string>
+    <string name="section_about">درباره</string>
+    <string name="about_text">Se7en Pro برای اندروید %1$s\nکلاینت چندپروتکلی آنتی‌سنسور (موتور sing-box).\n\nموتور: sing-box · پل تونل: hev-socks5-tunnel\nمجوز MIT، بر پایه پروژه ویندوزی Se7en Pro.</string>
+    <string name="about_source">کد منبع</string>
+    <string name="engine_info">موتور: %1$s</string>
+    <string name="engine_not_run">هنوز اجرا نشده</string>
+
+    <string name="editor_title_new">پروفایل جدید</string>
+    <string name="editor_title_edit">ویرایش پروفایل</string>
+    <string name="field_type">پروتکل</string>
+    <string name="field_name">نام</string>
+    <string name="field_server">آدرس سرور</string>
+    <string name="field_port">پورت</string>
+    <string name="field_uuid">UUID</string>
+    <string name="field_aid">Alter ID</string>
+    <string name="field_password">رمز / کلید</string>
+    <string name="field_method">روش رمزنگاری</string>
+    <string name="field_username">نام کاربری</string>
+    <string name="field_orbot_port">پورت SOCKS اوربات</string>
+    <string name="field_obfs">رمز پرده‌پوشی (salamander)</string>
+    <string name="field_transport">ترنسپورت</string>
+    <string name="field_path">مسیر (Path)</string>
+    <string name="field_host">هدر Host</string>
+    <string name="field_service_name">نام سرویس gRPC</string>
+    <string name="field_http_host">هاست HTTP</string>
+    <string name="field_security">TLS</string>
+    <string name="field_sni">SNI / نام سرور</string>
+    <string name="field_fingerprint">اثر انگشت uTLS</string>
+    <string name="field_alpn">ALPN (با کاما جدا کنید)</string>
+    <string name="field_insecure">پذیرش TLS نامعتبر</string>
+    <string name="field_pbk">کلید عمومی Reality</string>
+    <string name="field_sid">Reality Short ID</string>
+    <string name="field_flow">Flow</string>
+    <string name="field_wg_private">کلید خصوصی WireGuard</string>
+    <string name="field_wg_peer">کلید عمومی همتا (Cloudflare)</string>
+    <string name="field_wg_address">آدرس اینترفیس</string>
+    <string name="field_wg_reserved">بایت‌های Reserved (base64 یا 1,2,3)</string>
+    <string name="field_wg_mtu">MTU</string>
+    <string name="field_json">JSON سینگ‌باکس (خروجی یا کانفیگ کامل)</string>
+    <string name="field_chain">زنجیره از طریق (چند مرحله‌ای)</string>
+    <string name="chain_none">بدون زنجیره</string>
+    <string name="err_required">الزامی</string>
+    <string name="err_invalid_json">JSON سینگ‌باکس نامعتبر است</string>
+
+    <string name="err_no_profile">اول یک پروفایل انتخاب کنید</string>
+    <string name="err_config">خطا در تولید کانفیگ</string>
+    <string name="err_engine_start">راه‌اندازی موتور sing-box ناموفق بود</string>
+    <string name="err_engine_ready">موتور به‌موقع آماده نشد.\nآخرین خطوط موتور:</string>
+    <string name="err_vpn_establish">خطا در ساخت اینترفیس VPN</string>
+    <string name="err_vpn_permission">مجوز VPN رد شد</string>
+    <string name="err_tunnel_bridge">راه‌اندازی پل تونل ناموفق بود</string>
+
+    <string name="logs_title">لاگ‌ها</string>
+    <string name="logs_refresh">بازخوانی</string>
+    <string name="logs_share">اشتراک‌گذاری</string>
+
+    <!-- Notifications / tile -->
+    <string name="channel_vpn">تونل VPN</string>
+    <string name="notif_connecting">در حال اتصال…</string>
+    <string name="notif_connected">متصل</string>
+    <string name="action_disconnect">قطع اتصال</string>
+    <string name="tile_connected">متصل</string>
+    <string name="tile_connecting">در حال اتصال…</string>
+    <string name="tile_error">خطا</string>
+</resources>

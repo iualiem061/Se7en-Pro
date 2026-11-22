@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/ic_add"
+        android:title="@string/menu_add"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_import"
+        android:icon="@drawable/ic_paste"
+        android:title="@string/import_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_apps"
+        android:icon="@drawable/ic_apps"
+        android:title="@string/setting_apps"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_killswitch"
+        android:icon="@drawable/ic_shield"
+        android:title="@string/killswitch_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_logs"
+        android:icon="@drawable/ic_logs"
+        android:title="@string/logs_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,14 @@
+# Built artifacts
+build/
+.gradle/
+local.properties
+*.apk
+*.aab
+
+# sing-box engine binaries are fetched by scripts/fetch-engine.sh (too large for git)
+app/src/main/jniLibs/*
+
+# IDE
+.idea/
+*.iml
+.DS_Store
