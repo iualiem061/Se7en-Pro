@@ -111,6 +111,14 @@ object SingBoxConfigBuilder {
         val rules = JSONArray()
         rules.put(JSONObject().put("action", "sniff"))
         rules.put(JSONObject().put("protocol", "dns").put("action", "hijack-dns"))
+        // The private-IP rule routes to the "direct" outbound: make sure it exists
+        // (may be missing in user-provided raw sing-box configs).
+        var hasDirect = false
+        val obsArr = root.getJSONArray("outbounds")
+        for (i in 0 until obsArr.length()) {
+            if (obsArr.getJSONObject(i).optString("tag", "") == "direct") { hasDirect = true; break }
+        }
+        if (!hasDirect) obsArr.put(JSONObject().put("type", "direct").put("tag", "direct"))
         rules.put(
             JSONObject()
                 .put("ip_is_private", true)
